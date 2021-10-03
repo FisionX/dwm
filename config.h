@@ -10,8 +10,8 @@ static const unsigned int gappov    = 10;       /* vert outer gap between window
 static       int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=10" };
-static const char dmenufont[]       = "monospace:size=10";
+static const char *fonts[]          = { "Liberation Mono:size=10" };
+static const char dmenufont[]       = "Liberation Mono:size=10";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -109,16 +109,14 @@ static Key keys[] = {
 	{ MODKEY|Mod4Mask|ShiftMask,    XK_i,      incrigaps,      {.i = -3 } }, /* Decrease inner gaps */
 	{ MODKEY|Mod4Mask,              XK_o,      incrogaps,      {.i = +3 } }, /* Increase outer gaps */
 	{ MODKEY|Mod4Mask|ShiftMask,    XK_o,      incrogaps,      {.i = -3 } }, /* Decrease outer gaps */
-  /*
-	{ MODKEY|Mod4Mask,              XK_6,      incrihgaps,     {.i = +3 } },
-	{ MODKEY|Mod4Mask|ShiftMask,    XK_6,      incrihgaps,     {.i = -3 } },
-	{ MODKEY|Mod4Mask,              XK_7,      incrivgaps,     {.i = +3 } },
-	{ MODKEY|Mod4Mask|ShiftMask,    XK_7,      incrivgaps,     {.i = -3 } },
-	{ MODKEY|Mod4Mask,              XK_8,      incrohgaps,     {.i = +3 } },
-	{ MODKEY|Mod4Mask|ShiftMask,    XK_8,      incrohgaps,     {.i = -3 } },
-	{ MODKEY|Mod4Mask,              XK_9,      incrovgaps,     {.i = +3 } },
-	{ MODKEY|Mod4Mask|ShiftMask,    XK_9,      incrovgaps,     {.i = -3 } },
-  */
+	/*{ MODKEY|Mod4Mask,              XK_6,      incrihgaps,     {.i = +3 } },*/
+	/*{ MODKEY|Mod4Mask|ShiftMask,    XK_6,      incrihgaps,     {.i = -3 } },*/
+	/*{ MODKEY|Mod4Mask,              XK_7,      incrivgaps,     {.i = +3 } },*/
+	/*{ MODKEY|Mod4Mask|ShiftMask,    XK_7,      incrivgaps,     {.i = -3 } },*/
+	/*{ MODKEY|Mod4Mask,              XK_8,      incrohgaps,     {.i = +3 } },*/
+	/*{ MODKEY|Mod4Mask|ShiftMask,    XK_8,      incrohgaps,     {.i = -3 } },*/
+	/*{ MODKEY|Mod4Mask,              XK_9,      incrovgaps,     {.i = +3 } },*/
+	/*{ MODKEY|Mod4Mask|ShiftMask,    XK_9,      incrovgaps,     {.i = -3 } },*/
 	{ MODKEY|Mod4Mask,              XK_0,      togglegaps,     {0} },
 	{ MODKEY|Mod4Mask|ShiftMask,    XK_0,      defaultgaps,    {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
