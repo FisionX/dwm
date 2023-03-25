@@ -1332,7 +1332,7 @@ resizeclient(Client *c, int x, int y, int w, int h)
 
 	if (c->isfloating || c->mon->lt[c->mon->sellt]->arrange == NULL) {
 	} else {
-		if (c->mon->lt[c->mon->sellt]->arrange == monocle || n == 1 && !enablegaps) {
+		if (c->mon->lt[c->mon->sellt]->arrange == monocle && !enablegaps || n == 1 && !enablegaps) {
 			wc.border_width = 0;
 			c->w = wc.width += c->bw * 2;
 			c->h = wc.height += c->bw * 2;
