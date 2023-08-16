@@ -92,7 +92,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_e,      spawn,          SHCMD("setxkbmap us; kill -45 $(pidof dwmblocks)") },
  	{ MODKEY,                       XK_s,      spawn,          SHCMD("setxkbmap es; kill -45 $(pidof dwmblocks)") },
 	{ MODKEY|ShiftMask,             XK_d,      spawn,          SHCMD("setxkbmap dvorak; kill -45 $(pidof dwmblocks)") },
-    { MODKEY,                       XK_w,      spawn,          SHCMD("$BROWSER") },
+/*    { MODKEY,                       XK_w,      spawn,          SHCMD("$BROWSER") },*/
     { MODKEY,                       XK_a,      spawn,          SHCMD("$flameshot gui") },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
